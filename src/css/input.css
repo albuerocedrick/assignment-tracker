@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* for landing*/
+.feature-sec-box {
+    @apply bg-white flex-1;
+}
+
+.benefits-sec-box {
+    @apply bg-gray-300;
+}
+
+.cta-btn {
+    @apply bg-gray-300 w-60 h-16 rounded-lg;
+}
+
+.navbar-btn {
+    @apply hover:underline;
+}
+
+.sign-container {
+    @apply flex flex-row w-9/10 h-12 mb-4;
+}
+
+.sign-label {
+    @apply bg-gray-500 rounded-bl-xl rounded-tl-xl w-[15%] flex justify-center items-center;
+}
+
+.sign-input {
+    @apply rounded-br-xl rounded-tr-xl w-[85%] border-2 border-gray-500 pl-1 focus:border-gray-700 focus:border-2 border-l-0;
+}
+
+.sign-btn {
+    @apply mt-4 bg-gray-500 rounded-xl w-2/5 h-12
+}
+
+/* for dashboard */
+.sidebar-items {
+    @apply h-16 w-9/10 flex items-center hover:bg-gray-600 rounded-xl
+}
+
+.sidebar-inner {
+    @apply flex flex-row pl-1.5 items-center
+}
+
+#sidebar-list span{
+    @apply pl-1.5
+}

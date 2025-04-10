@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class=" fixed top-0 left-0 w-screen bg-gray-600 h-20 flex flex-row justify-between">
+        <div class="flex flex-row items-center">
+            <!-- <img src="images/img.png" alt="jollibee picture" class="h-14"> -->
+            <p class="text-white ml-7">Assignment and Activity Tracker</p>
+        </div>
+        <div class = "flex min-w-1/2 md:min-w-1/4 lg:min-w-1/5 justify-evenly items-center">
+            <a href="#" class="navbar-btn">About Us</a>
+            <a href="#" id="signin-btn-modal" class="navbar-btn">Log In</a>
+            <a href="#" id="signup-btn-modal" class="navbar-btn">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="mt-20 md:mx-8 lg:mx-24 h-[85vh] flex flex-col-reverse md:flex-row items-center">
+        <div class="flex-1 m-[10px] flex flex-col justify-center md:pl-11 gap-4 items-center text-center md:text-left md:items-baseline">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800">
+                Streamline Your Tasks and Collaborate Effortlessly with Assignment and Activity Tracker
+            </h1>
+            <p class="text-md md:text-xl text-gray-600 max-w-3xl">
+                A powerful task management tool that allows you to seamlessly collaborate with others. By giving selective access, other users can assign tasks to you, helping you stay on top of your assignments and activities in real-time.
+            </p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+        <div class=" h-[400px] flex-1 m-[10px] flex justify-center items-center text-5xl font-bold text-gray-800">
+            <!-- <h1>THE PHOTO</h1> -->
+            <img src="../src/images/lndng-page-photo.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION-->
+    <div class="bg-gray-300 h-[750px] md:h-[300px] flex flex-col md:flex-row justify-evenly gap-4 p-4">
+        <div class="feature-sec-box"></div>
+        <div class="feature-sec-box"></div>
+        <div class="feature-sec-box"></div>
+    </div>
+
+    <!-- BENEFITS SECTION -->
+<div class="grid grid-cols-1 grid-rows-[125px_250px_125px_250px_125px_250px] md:grid-cols-5 md:grid-rows-[300px_300px_300px] gap-4 m-4">
+        <div class="benefits-sec-box order-2 col-span-1 md:col-span-3"></div>
+        <div class="benefits-sec-box order-1 col-span-1 md:col-span-2"></div>
+        <div class="benefits-sec-box order-4 col-span-1 md:col-span-2"></div>
+        <div class="benefits-sec-box order-3 col-span-1 md:col-span-3"></div>
+        <div class="benefits-sec-box order-6 col-span-1 md:col-span-3"></div>
+        <div class="benefits-sec-box order-5 col-span-1 md:col-span-2"></div>
+    </div>
+    
+    <!-- LAST CTA SECTION -->
+    <div class="h-[400px] flex flex-col justify-center text-center items-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+            Ready to Stay On Top of Your Tasks?
+        </h2>
+        <p class="text-md md:text-xl mb-6">
+            Don't let assignments and activities overwhelm you. Collaborate seamlessly, manage your tasks, and boost your productivity.
+        </p>
+        <button class="cta-btn">Get Started Now</button>
+    </div>
+
+    <!-- FOOTER -->
+    <!-- <div class="h-[300px]"></div> -->
+
+    <!-- SIGN UP PAGE -->
+    <div id="signup-modal" class="hidden fixed inset-0 bg-black/50">
+        <div class="absolute top-1/2 left-1/2 h-2/3 w-[450px] bg-white p-8 rounded-lg -translate-x-1/2 -translate-y-1/2 shadow-lg flex flex-col justify-center items-center ">
+            <h1 class="font-bold text-4xl mb-12">SIGN UP</h1>
+
+            <div class="sign-container">
+                <label for="firstname-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                </label>
+                <input type="text" name="firstname" id="firstname-input" placeholder="First Name" class="sign-input">
+            </div>
+
+            <div class="sign-container">
+                <label for="lastname-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                </label>
+                <input type="text" name="lastname" id="lastname-input" placeholder="Last Name" class="sign-input">
+            </div>
+
+            <div class="sign-container">
+                <label for="email-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </label>
+                <input type="email" name="email" id="email-input" placeholder="Email" class="sign-input">
+            </div>
+
+            <div class="sign-container" >
+                <label for="password-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-200v-80h800v80H80Zm46-242-52-30 34-60H40v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Zm320 0-52-30 34-60h-68v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Zm320 0-52-30 34-60h-68v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Z"/></svg>
+                </label>
+                <input type="password" name="password" id="password-input" placeholder="Password" class="sign-input">
+            </div>
+
+            <div class="sign-container">
+                <label for="repeat-password-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-200v-80h800v80H80Zm46-242-52-30 34-60H40v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Zm320 0-52-30 34-60h-68v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Zm320 0-52-30 34-60h-68v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Z"/></svg>
+                </label>
+                <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password" class="sign-input">
+            </div>
+
+            <button id="signup-btn" class="sign-btn">Sign Up</button>
+        </div>
+        
+    </div>
+    <!-- LOG IN PAGE -->
+    <div id="signin-modal" class="hidden fixed inset-0 bg-black/50">
+        <div class="absolute top-1/2 left-1/2 h-1/2 w-[450px] bg-white p-8 rounded-lg -translate-x-1/2 -translate-y-1/2 shadow-lg flex flex-col justify-center items-center ">
+            <h1 class="font-bold text-4xl mb-12">SIGN IN</h1>
+
+            <div class="sign-container">
+                <label for="email-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </label>
+                <input type="email" name="email" id="email-input" placeholder="Email" class="sign-input">
+            </div>
+
+            <div class="sign-container" >
+                <label for="password-input" class="sign-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-200v-80h800v80H80Zm46-242-52-30 34-60H40v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Zm320 0-52-30 34-60h-68v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Zm320 0-52-30 34-60h-68v-60h68l-34-58 52-30 34 58 34-58 52 30-34 58h68v60h-68l34 60-52 30-34-60-34 60Z"/></svg>
+                </label>
+                <input type="password" name="password" id="password-input" placeholder="Password" class="sign-input">
+            </div>
+
+            <button id="signin-btn" class="sign-btn">Sign In</button>
+
+            <p class="mt-4">Already have an account? <a href="#">Sign Up</a></p>
+        </div>
+        
+    </div>
+
+    <script src="../src/js/indexEvents.js"></script>
+</body>
+</html>
