@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // GO TO DASHBOARD AFTER SING UP/IN (NO CREDENTIAL CHECKS AS OF NOW)
     document.getElementById('signin-btn').addEventListener("click", (event) => {
-        location.replace("dashboard.html");
+        window.location.href = "dashboard.html";
     })
 
     document.getElementById('signup-btn').addEventListener("click", (event) => {
-        location.replace("dashboard.html");
+        window.location.href = "dashboard.html";
     })
 })
